@@ -1,0 +1,89 @@
+/* General chat container styling */
+.chat {
+  background-color: #f0f8ff; /* Light blue background for the chat container */
+  width: 100%;
+  max-width: 400px; /* Restrict chat width */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* Adjust the height as needed */
+}
+
+/* Styling for the messages container */
+.messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Individual message styling */
+.message {
+  background-color: #e0f7fa; /* Light cyan for message background */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.own-message {
+  background-color: #bbdefb; /* Lighter blue for user's own messages */
+  align-self: flex-end;
+}
+
+.message-header {
+  font-weight: bold;
+  font-size: 14px;
+  color: #1e3a8a; /* Dark blue for the sender's name */
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 12px;
+  color: #90a4ae; /* Grey color for the timestamp */
+}
+
+.message-content {
+  font-size: 16px;
+  color: #333; /* Dark text color for the message */
+}
+
+/* Input section styling */
+.message-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid #1e40af; /* Dark blue border */
+  border-radius: 20px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.message-input input:focus {
+  outline: none;
+  border-color: #2563eb; /* Lighter blue on focus */
+}
+
+.message-input button {
+  background-color: #1e40af; /* Dark blue for the send button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message-input button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}

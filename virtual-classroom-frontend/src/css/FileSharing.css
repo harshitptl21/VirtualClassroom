@@ -1,0 +1,79 @@
+/* General styling for the file sharing container */
+.file-sharing {
+  background-color: #f0f8ff; /* Light blue background for the container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Upload section styling */
+.upload-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.upload-section input {
+  padding: 10px;
+  border: 2px solid #1e40af; /* Dark blue border for the file input */
+  border-radius: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  background-color: #ffffff; /* White background for the input */
+}
+
+.upload-section input:disabled {
+  background-color: #e0e0e0; /* Grey background when uploading */
+  cursor: not-allowed;
+}
+
+.upload-section span {
+  color: #1e40af; /* Dark blue text for uploading status */
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Files list section styling */
+.files-list {
+  margin-top: 10px;
+}
+
+.file-item {
+  background-color: #e0f7fa; /* Light cyan background for file items */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.file-item span {
+  color: #1e3a8a; /* Dark blue text for the file name */
+  font-weight: bold;
+}
+
+.file-item a {
+  color: #1e40af; /* Dark blue color for the download link */
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #1e40af; /* Dark blue border around the download link */
+  padding: 5px 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.file-item a:hover {
+  background-color: #1e40af; /* Dark blue background on hover */
+  color: white;
+}
+
+/* Styling for the download link when hovered */
+.file-item a:focus {
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}

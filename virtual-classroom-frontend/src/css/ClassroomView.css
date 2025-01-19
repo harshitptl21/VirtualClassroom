@@ -1,0 +1,100 @@
+/* General styles for the classroom layout */
+.classroom-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #f0f8ff; /* Light blue background for the entire container */
+  font-family: Arial, sans-serif;
+}
+
+/* Main content area styling */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 70%; /* You can adjust the width as needed */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the main area */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .video-conference,
+.main-content .whiteboard {
+  margin-bottom: 20px;
+}
+
+.main-content h1 {
+  font-size: 24px;
+  color: #1e3a8a; /* Dark blue for headings */
+}
+
+/* Sidebar styling */
+.sidebar {
+  width: 25%; /* Sidebar takes up 25% of the width */
+  padding: 20px;
+  background-color: #e0f7fa; /* Light cyan background for the sidebar */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* File Sharing and Chat components in the sidebar */
+.sidebar .file-sharing,
+.sidebar .chat {
+  margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #1e3a8a; /* Dark blue for subheadings */
+  margin-bottom: 10px;
+}
+
+/* Styling for buttons and controls */
+button {
+  background-color: #1e40af; /* Deep blue for buttons */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+/* Additional styles for chat and file sharing containers */
+.chat-container,
+.file-sharing-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-container {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.chat-message {
+  padding: 5px 10px;
+  margin-bottom: 8px;
+  background-color: #e0f7fa; /* Light cyan for messages */
+  border-radius: 5px;
+}
+
+/* Whiteboard and video conference styling */
+.whiteboard {
+  background-color: #f0f8ff;
+  border: 2px solid #1e40af; /* Deep blue border for the whiteboard */
+  border-radius: 8px;
+}
+
+.video-conference {
+  background-color: #f0f8ff;
+  border: 2px solid #1e40af; /* Deep blue border for the video conference */
+  border-radius: 8px;
+}

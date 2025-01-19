@@ -1,0 +1,76 @@
+/* General container styling for the video conference */
+.video-conference {
+  background-color: #f0f8ff; /* Light blue background for the conference container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Video grid to hold the local and remote videos */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsively adjust video size */
+  gap: 10px;
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Local video styling */
+.local-video {
+  position: relative;
+  background-color: #e0f7fa; /* Light cyan background for the local video container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.local-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Remote video styling */
+.remote-video {
+  position: relative;
+  background-color: #e0f7fa; /* Light cyan background for remote video container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.remote-video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Styling for the mute/unmute button or any other controls (if added) */
+button {
+  background-color: #1e40af; /* Dark blue button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+/* Optional: styling for the local video when minimized (for picture-in-picture) */
+.local-video.minimized {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #1e40af; /* Dark blue border when minimized */
+  z-index: 10;
+}

@@ -1,0 +1,110 @@
+/* General styling for the whiteboard container */
+.whiteboard {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Controls container (color picker, brush size, and clear button) */
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the color picker */
+.controls input[type="color"] {
+  padding: 5px;
+  border: 2px solid #1e40af; /* Dark blue border */
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease;
+  width: 40px; /* Fixed width for consistency */
+}
+
+.controls input[type="color"]:hover {
+  border-color: #2563eb; /* Lighter blue on hover */
+}
+
+/* Styling for the brush size range input */
+.controls input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 120px; /* Adjust width for better visibility */
+  height: 8px;
+  background-color: #e0f7fa; /* Light cyan background */
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #1e40af; /* Dark blue for the thumb */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+/* Styling for the clear button */
+.controls button {
+  background-color: #1e40af; /* Dark blue background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #2563eb; /* Lighter blue on hover */
+}
+
+/* Canvas styling */
+canvas {
+  border: 2px solid #1e40af; /* Dark blue border */
+  background-color: white;
+  border-radius: 8px;
+  cursor: crosshair;
+}
+
+/* Responsive design for canvas on smaller screens */
+@media (max-width: 768px) {
+  .whiteboard {
+    padding: 15px;
+  }
+  
+  .controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Reduced gap for vertical layout */
+  }
+
+  .controls input[type="color"] {
+    width: 35px; /* Adjust color picker size for smaller screens */
+  }
+
+  .controls input[type="range"] {
+    width: 150px; /* Adjust slider width for smaller screens */
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}

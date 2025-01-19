@@ -1,0 +1,91 @@
+.dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.create-classroom {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.create-classroom form {
+  display: flex;
+  gap: 10px;
+}
+
+.create-classroom input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.create-classroom button,
+.classroom-card button {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-classroom button:hover,
+.classroom-card button:hover {
+  background: #1565c0;
+}
+
+.classrooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.classroom-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.classroom-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.classroom-card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.classroom-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .create-classroom form {
+    flex-direction: column;
+  }
+  
+  .classrooms-grid {
+    grid-template-columns: 1fr;
+  }
+}
