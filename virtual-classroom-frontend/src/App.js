@@ -39,7 +39,7 @@ function App() {
             {isAuthenticated ? <Redirect to="/dashboard" /> : <Login setIsAuthenticated={setIsAuthenticated} setUser={setUser} />}
           </Route>
           <Route path="/dashboard">
-            {isAuthenticated ? <Dashboard user={user} /> : <Redirect to="/" />}
+            {isAuthenticated ? <Dashboard user={user} setIsAuthenticated={setIsAuthenticated} setUser={setUser} /> : <Redirect to="/" />}
           </Route>
           <Route path="/classroom/:id">
             {isAuthenticated ? <ClassroomView user={user} /> : <Redirect to="/" />}
